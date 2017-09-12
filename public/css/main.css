@@ -1,13 +1,18 @@
+body {
+    background-color: #000000;
+}
+
 .center {
     text-align: center;
 }
 
-p#footer {
-    color: #f2f3f9;
+#header {
+    z-index: 1;
+}
 
-    position: absolute;
-    left: 30%;
-    width: 40%;
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
 }
 
 .nav {
@@ -32,11 +37,10 @@ p#footer {
     display: inline;
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: #111;
-}
+p#footer {
+    color: #f2f3f9;
 
-body {
-    background-color: #000000;
+    position: absolute;
+    left: 30%;
+    width: 40%;
 }

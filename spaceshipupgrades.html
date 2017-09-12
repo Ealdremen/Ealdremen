@@ -13,7 +13,7 @@
 
 <h1 class="center">Spaceship Upgrades</h1>
 
-<table>
+<table class="major">
     <colgroup>
         <col style="width:20%;">
         <col style="width:40%;">
@@ -28,20 +28,21 @@
                 <h2 class="inline" id="budget">0</h2>
                 <h2 class="inline">g</h2>
             </div>
+            <br>
         </td>
         <td>
             <h1 class="center">Upgrades</h1>
             <div class="center">
-                <p class="inline">For a robust description of each upgrade, check</p>
-                <a class="inline"
-                   href="https://docs.google.com/document/d/1iShjVnizTJvbB7U_8Z_5P10m_tL62YIGRz28f8_yGnI/edit">here</a>.
+                <p class="inline">For a full description of each upgrade or tier, check</p>
+                <a class="inline" href="https://docs.google.com/document/d/1iShjVnizTJvbB7U_8Z_5P10m_tL62YIGRz28f8_yGnI/edit">
+                    here</a>.
             </div>
         </td>
     </tr>
     <tr>
         <td>
             <form id="budget-form">
-                <h2 class="center">Ship Type / Budget</h2>
+                <h2>Ship Type / Budget</h2>
                 <label>
                     <input class="budget-type" type="radio" name="budget" value="10000">
                     Tier 1: Cutter (10,000 gp)
@@ -70,318 +71,339 @@
             </form>
         </td>
         <td>
-            <!--Docking Bay Choices-->
-            <form class="upgrade-form">
-                <h3 class="inline">Docking Bay</h3>
-                <input type="checkbox" class="checkbox" name="enabled" value="0" title="Docking Bay">
-                <br>
-                <label>
-                    <input type="radio" class="radio" name="tier" value="10000">
-                    Tier 1 (requires Carrier): 10,000g
-                </label>
-                <br>
-                <label>
-                    <input type="radio" class="radio" name="tier" value="20000">
-                    Tier 2 (requires Dreadnought): 20,000g
-                </label>
-                <br>
-                <label>
-                    <input type="radio" class="radio" name="tier" value="40000">
-                    Tier 3 (requires Worldship): 40,000g
-                </label>
-                <br>
-            </form>
+            <table style="width: 100%">
+                <tr>
+                    <td>
+                        <!--Docking Bay Choices-->
+                        <form class="upgrade-form">
+                            <h3 class="inline">Docking Bay</h3>
+                            <input type="checkbox" class="checkbox" name="enabled" value="0" title="Docking Bay">
+                            <br>
+                            <label>
+                                <input type="radio" class="radio" name="tier" value="10000">
+                                Tier 1 (requires Carrier): 10,000g
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" class="radio" name="tier" value="20000">
+                                Tier 2 (requires Dreadnought): 20,000g
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" class="radio" name="tier" value="40000">
+                                Tier 3 (requires Worldship): 40,000g
+                            </label>
+                            <br>
+                            <br>
+                        </form>
 
-            <!--Room Choices-->
-            <form class="upgrade-form">
-                <h3 class="inline">Rooms</h3>
-                <input type="checkbox" class="checkbox" name="enabled" value="0" title="Rooms">
-                <br>
-                <label>
-                    <input type="radio" class="radio" name="tier" value="200">
-                    Tier 1: 200g
-                </label>
-                <br>
-                <label>
-                    <input type="radio" class="radio" name="tier" value="500">
-                    Tier 2: 500g
-                </label>
-                <br>
-                <label>
-                    <input type="radio" class="radio" name="tier" value="1000">
-                    Tier 3: 1000g
-                </label>
-                <br>
-            </form>
+                        <!--Room Choices-->
+                        <form class="upgrade-form">
+                            <h3 class="inline">Rooms</h3>
+                            <input type="checkbox" class="checkbox" name="enabled" value="0" title="Rooms">
+                            <br>
+                            <label>
+                                <input type="radio" class="radio" name="tier" value="200">
+                                Tier 1: 200g
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" class="radio" name="tier" value="500">
+                                Tier 2: 500g
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" class="radio" name="tier" value="1000">
+                                Tier 3: 1000g
+                            </label>
+                            <br>
+                            <br>
+                        </form>
 
-            <!--Storage Choices-->
-            <form class="upgrade-form">
-                <h3 class="inline">Storage</h3>
-                <input type="checkbox" class="checkbox" name="enabled" value="0" title="Storage">
-                <br>
-                <label>
-                    <input type="radio" class="radio" name="tier" value="100">
-                    Tier 1: 100g
-                </label>
-                <br>
-                <label>
-                    <input type="radio" class="radio" name="tier" value="550">
-                    Tier 2: 550g
-                </label>
-                <br>
-            </form>
+                        <!--Storage Choices-->
+                        <form class="upgrade-form">
+                            <h3 class="inline">Storage</h3>
+                            <input type="checkbox" class="checkbox" name="enabled" value="0" title="Storage">
+                            <br>
+                            <label>
+                                <input type="radio" class="radio" name="tier" value="100">
+                                Tier 1: 100g
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" class="radio" name="tier" value="550">
+                                Tier 2: 550g
+                            </label>
+                            <br>
+                            <br>
+                        </form>
+                    </td>
+                    <td>
+                        <!--Weapon Choices-->
+                        <form class="upgrade-form">
+                            <h3 class="inline">Weapons</h3>
+                            <input type="checkbox" class="checkbox" name="enabled" value="0" title="Weapons">
+                            <br>
+                            <label>
+                                <input type="radio" class="radio" name="tier" value="10000">
+                                Tier 1: 10,000g
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" class="radio" name="tier" value="20000">
+                                Tier 2: 20,000g
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" class="radio" name="tier" value="50000">
+                                Tier 3: 50,000g
+                            </label>
+                            <br>
+                            <br>
+                        </form>
 
-            <!--Weapon Choices-->
-            <form class="upgrade-form">
-                <h3 class="inline">Weapons</h3>
-                <input type="checkbox" class="checkbox" name="enabled" value="0" title="Weapons">
-                <br>
-                <label>
-                    <input type="radio" class="radio" name="tier" value="10000">
-                    Tier 1: 10,000g
-                </label>
-                <br>
-                <label>
-                    <input type="radio" class="radio" name="tier" value="20000">
-                    Tier 2: 20,000g
-                </label>
-                <br>
-                <label>
-                    <input type="radio" class="radio" name="tier" value="50000">
-                    Tier 3: 50,000g
-                </label>
-                <br>
-            </form>
+                        <!--Kitchen Choices-->
+                        <form class="upgrade-form">
+                            <h3 class="inline">Kitchen</h3>
+                            <input type="checkbox" class="checkbox" name="enabled" value="0" title="Kitchen">
+                            <br>
+                            <label>
+                                <input type="radio" class="radio" name="tier" value="50">
+                                Tier 1: 50g
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" class="radio" name="tier" value="100">
+                                Tier 2: 100g
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" class="radio" name="tier" value="200">
+                                Tier 3: 200g
+                            </label>
+                            <br>
+                            <br>
+                        </form>
 
-            <!--Kitchen Choices-->
-            <form class="upgrade-form">
-                <h3 class="inline">Kitchen</h3>
-                <input type="checkbox" class="checkbox" name="enabled" value="0" title="Kitchen">
-                <br>
-                <label>
-                    <input type="radio" class="radio" name="tier" value="50">
-                    Tier 1: 50g
-                </label>
-                <br>
-                <label>
-                    <input type="radio" class="radio" name="tier" value="100">
-                    Tier 2: 100g
-                </label>
-                <br>
-                <label>
-                    <input type="radio" class="radio" name="tier" value="200">
-                    Tier 3: 200g
-                </label>
-                <br>
-            </form>
+                        <!--Navigation Choices-->
+                        <form class="upgrade-form">
+                            <h3 class="inline">Navigation</h3>
+                            <input type="checkbox" class="checkbox" name="enabled" value="0" title="Navigation">
+                            <br>
+                            <label>
+                                <input type="radio" class="radio" name="tier" value="100">
+                                Tier 1: 100g
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" class="radio" name="tier" value="300">
+                                Tier 2: 300g
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" class="radio" name="tier" value="800">
+                                Tier 3: 800g
+                            </label>
+                            <br>
+                            <br>
+                        </form>
 
-            <!--Navigation Choices-->
-            <form class="upgrade-form">
-                <h3 class="inline">Navigation</h3>
-                <input type="checkbox" class="checkbox" name="enabled" value="0" title="Navigation">
-                <br>
-                <label>
-                    <input type="radio" class="radio" name="tier" value="100">
-                    Tier 1: 100g
-                </label>
-                <br>
-                <label>
-                    <input type="radio" class="radio" name="tier" value="300">
-                    Tier 2: 300g
-                </label>
-                <br>
-                <label>
-                    <input type="radio" class="radio" name="tier" value="800">
-                    Tier 3: 800g
-                </label>
-                <br>
-            </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!--Animal Care Choices-->
+                        <form class="upgrade-form">
+                            <h3 class="inline">Animal Care</h3>
+                            <input type="checkbox" class="checkbox" name="enabled" value="0" title="Animal Care">
+                            <br>
+                            <label>
+                                <input type="radio" class="radio" name="tier" value="200">
+                                Tier 1: 200g
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" class="radio" name="tier" value="300">
+                                Tier 2: 300g
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" class="radio" name="tier" value="500">
+                                Tier 3: 500g
+                            </label>
+                            <br>
+                            <br>
+                        </form>
 
-            <!--Animal Care Choices-->
-            <form class="upgrade-form">
-                <h3 class="inline">Animal Care</h3>
-                <input type="checkbox" class="checkbox" name="enabled" value="0" title="Animal Care">
-                <br>
-                <label>
-                    <input type="radio" class="radio" name="tier" value="200">
-                    Tier 1: 200g
-                </label>
-                <br>
-                <label>
-                    <input type="radio" class="radio" name="tier" value="300">
-                    Tier 2: 300g
-                </label>
-                <br>
-                <label>
-                    <input type="radio" class="radio" name="tier" value="500">
-                    Tier 3: 500g
-                </label>
-                <br>
-            </form>
+                        <!--Database Choices-->
+                        <form class="upgrade-form">
+                            <h3 class="inline">Database</h3>
+                            <input type="checkbox" class="checkbox" name="enabled" value="0" title="Database">
+                            <br>
+                            <label>
+                                <input type="radio" class="radio" name="tier" value="6000">
+                                Tier 1: 6,000g
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" class="radio" name="tier" value="12000">
+                                Tier 2: 12,000g
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" class="radio" name="tier" value="24000">
+                                Tier 3: 24,000g
+                            </label>
+                            <br>
+                            <br>
+                        </form>
 
-            <!--Database Choices-->
-            <form class="upgrade-form">
-                <h3 class="inline">Database</h3>
-                <input type="checkbox" class="checkbox" name="enabled" value="0" title="Database">
-                <br>
-                <label>
-                    <input type="radio" class="radio" name="tier" value="6000">
-                    Tier 1: 6,000g
-                </label>
-                <br>
-                <label>
-                    <input type="radio" class="radio" name="tier" value="12000">
-                    Tier 2: 12,000g
-                </label>
-                <br>
-                <label>
-                    <input type="radio" class="radio" name="tier" value="24000">
-                    Tier 3: 24,000g
-                </label>
-                <br>
-            </form>
+                        <!--Training Hall Choice-->
+                        <form class="upgrade-form">
+                            <h3 class="inline">Training Hall</h3>
+                            <label>
+                                <input type="checkbox" class="checkbox" name="enabled" value="4000" title="Training Hall">
+                                4000g
+                            </label>
+                            <br>
+                            <br>
+                        </form>
 
-            <!--Training Hall Choice-->
-            <form class="upgrade-form">
-                <h3 class="inline">Training Hall</h3>
-                <label>
-                <input type="checkbox" class="checkbox" name="enabled" value="4000" title="Training Hall">
-                    4000g
-                </label>
-                <br>
-            </form>
+                        <!--Portable Laboratory Choice-->
+                        <form class="upgrade-form">
+                            <h3 class="inline">Portable Laboratory</h3>
+                            <label>
+                                <input type="checkbox" class="checkbox" name="enabled" value="4000" title="Portable Laboratory">
+                                3500g
+                            </label>
+                            <br>
+                            <br>
+                        </form>
 
-            <!--Portable Laboratory Choice-->
-            <form class="upgrade-form">
-                <h3 class="inline">Portable Laboratory</h3>
-                <label>
-                    <input type="checkbox" class="checkbox" name="enabled" value="4000" title="Portable Laboratory">
-                    3500g
-                </label>
-                <br>
-            </form>
+                        <!--Portable Smithy Choice-->
+                        <form class="upgrade-form">
+                            <h3 class="inline">Portable Smithy</h3>
+                            <label>
+                                <input type="checkbox" class="checkbox" name="enabled" value="4000" title="Portable Smithy">
+                                3500g
+                            </label>
+                            <br>
+                            <br>
+                        </form>
 
-            <!--Portable Smithy Choice-->
-            <form class="upgrade-form">
-                <h3 class="inline">Portable Smithy</h3>
-                <label>
-                    <input type="checkbox" class="checkbox" name="enabled" value="4000" title="Portable Smithy">
-                    3500g
-                </label>
-                <br>
-            </form>
-
-            <!--Medical Center Choice-->
-            <form class="upgrade-form">
-                <h3 class="inline">Medical Center</h3>
-                <label>
-                    <input type="checkbox" class="checkbox" name="enabled" value="4000" title="Medical Center">
-                    2500g
-                </label>
-                <br>
-            </form>
-
-
-
-            <!--Altar Choices-->
-            <form class="upgrade-form">
-                <h3 class="inline">Altars</h3>
-                <input type="checkbox" class="checkbox" name="enabled" value="0" title="Altar">
-                <br>
-                <label>
-                    <input type="checkbox" class="radio" name="tier" value="2000">
-                    <b>Altar of the Abyssroamer</b>: 2000g. Conflicts with: <b>Ousted Gaze</b>
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" class="radio" name="tier" value="2000">
-                    <b>Altar of the Answering Echo</b>: 2000g. No Conflicts.
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" class="radio" name="tier" value="2000">
-                    <b>Altar of the Cometfletcher</b>: 2000g. No Conflicts.
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" class="radio" name="tier" value="2000">
-                    <b>Altar of the Earthsinger</b>: 2000g. Conflicts with: <b>Wandering Star</b> and <b>Worldchaser</b>.
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" class="radio" name="tier" value="2000">
-                    <b>Altar of the Final Judge</b>: 2000g. Conflicts with: <b>Glinting Sabre</b> and <b>Ousted Gaze</b>.
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" class="radio" name="tier" value="2000">
-                    <b>Altar of the Firecaller</b>: 2000g. No Conflicts.
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" class="radio" name="tier" value="2000">
-                    <b>Altar of the Fortuned Path</b>: 2000g. No Conflicts.
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" class="radio" name="tier" value="2000">
-                    <b>Altar of the Glinting Sabre</b>: 2000g. Conflicts with: <b>Final Judge</b>.
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" class="radio" name="tier" value="2000">
-                    <b>Altar of the Infinite Coil</b>: 2000g. No Conflicts.
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" class="radio" name="tier" value="2000">
-                    <b>Altar of the Lightfont</b>: 2000g. No Conflicts.
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" class="radio" name="tier" value="2000">
-                    <b>Altar of the Martyred Child</b>: 2000g. No Conflicts.
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" class="radio" name="tier" value="2000">
-                    <b>Altar of the Netherlord</b>: 2000g. Conflicts with: <b>Wandering Star</b> and <b>Worldchaser</b>.
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" class="radio" name="tier" value="2000">
-                    <b>Altar of the Ousted Gaze</b>: 2000g. Conflicts with: <b>Abyssroamer</b> and <b>Final Judge</b>.
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" class="radio" name="tier" value="2000">
-                    <b>Altar of the Straying Mind</b>: 2000g. No Conflicts.
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" class="radio" name="tier" value="2000">
-                    <b>Altar of the Timedreamer</b>: 2000g. No Conflicts.
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" class="radio" name="tier" value="2000">
-                    <b>Altar of the Unweighted Scales</b>: 2000g. No Conflicts.
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" class="radio" name="tier" value="2000">
-                    <b>Altar of the Wandering Star</b>: 2000g. Conflicts with: <b>Earthsinger</b> and <b>Netherlord</b>.
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" class="radio" name="tier" value="2000">
-                    <b>Altar of the Worldchaser</b>: 2000g. Conflicts with: <b>Earthsinger</b> and <b>Netherlord</b>.
-                </label>
-                <br>
-            </form>
+                        <!--Medical Center Choice-->
+                        <form class="upgrade-form">
+                            <h3 class="inline">Medical Center</h3>
+                            <label>
+                                <input type="checkbox" class="checkbox" name="enabled" value="4000" title="Medical Center">
+                                2500g
+                            </label>
+                            <br>
+                            <br>
+                        </form>
+                    </td>
+                    <td>
+                        <!--Altar Choices-->
+                        <form class="upgrade-form">
+                            <h3 class="inline">Altars</h3>
+                            <input type="checkbox" class="checkbox" name="enabled" value="0" title="Altar">
+                            <br>
+                            <label>
+                                <input type="checkbox" class="radio" name="tier" value="2000">
+                                <b>Altar of the Abyssroamer</b>: 2000g. Conflicts with: <b>Ousted Gaze</b>
+                            </label>
+                            <br>
+                            <label>
+                                <input type="checkbox" class="radio" name="tier" value="2000">
+                                <b>Altar of the Answering Echo</b>: 2000g. No Conflicts.
+                            </label>
+                            <br>
+                            <label>
+                                <input type="checkbox" class="radio" name="tier" value="2000">
+                                <b>Altar of the Cometfletcher</b>: 2000g. No Conflicts.
+                            </label>
+                            <br>
+                            <label>
+                                <input type="checkbox" class="radio" name="tier" value="2000">
+                                <b>Altar of the Earthsinger</b>: 2000g. Conflicts with: <b>Wandering Star</b> and <b>Worldchaser</b>.
+                            </label>
+                            <br>
+                            <label>
+                                <input type="checkbox" class="radio" name="tier" value="2000">
+                                <b>Altar of the Final Judge</b>: 2000g. Conflicts with: <b>Glinting Sabre</b> and <b>Ousted Gaze</b>.
+                            </label>
+                            <br>
+                            <label>
+                                <input type="checkbox" class="radio" name="tier" value="2000">
+                                <b>Altar of the Firecaller</b>: 2000g. No Conflicts.
+                            </label>
+                            <br>
+                            <label>
+                                <input type="checkbox" class="radio" name="tier" value="2000">
+                                <b>Altar of the Fortuned Path</b>: 2000g. No Conflicts.
+                            </label>
+                            <br>
+                            <label>
+                                <input type="checkbox" class="radio" name="tier" value="2000">
+                                <b>Altar of the Glinting Sabre</b>: 2000g. Conflicts with: <b>Final Judge</b>.
+                            </label>
+                            <br>
+                            <label>
+                                <input type="checkbox" class="radio" name="tier" value="2000">
+                                <b>Altar of the Infinite Coil</b>: 2000g. No Conflicts.
+                            </label>
+                            <br>
+                            <label>
+                                <input type="checkbox" class="radio" name="tier" value="2000">
+                                <b>Altar of the Lightfont</b>: 2000g. No Conflicts.
+                            </label>
+                            <br>
+                            <label>
+                                <input type="checkbox" class="radio" name="tier" value="2000">
+                                <b>Altar of the Martyred Child</b>: 2000g. No Conflicts.
+                            </label>
+                            <br>
+                            <label>
+                                <input type="checkbox" class="radio" name="tier" value="2000">
+                                <b>Altar of the Netherlord</b>: 2000g. Conflicts with: <b>Wandering Star</b> and <b>Worldchaser</b>.
+                            </label>
+                            <br>
+                            <label>
+                                <input type="checkbox" class="radio" name="tier" value="2000">
+                                <b>Altar of the Ousted Gaze</b>: 2000g. Conflicts with: <b>Abyssroamer</b> and <b>Final Judge</b>.
+                            </label>
+                            <br>
+                            <label>
+                                <input type="checkbox" class="radio" name="tier" value="2000">
+                                <b>Altar of the Straying Mind</b>: 2000g. No Conflicts.
+                            </label>
+                            <br>
+                            <label>
+                                <input type="checkbox" class="radio" name="tier" value="2000">
+                                <b>Altar of the Timedreamer</b>: 2000g. No Conflicts.
+                            </label>
+                            <br>
+                            <label>
+                                <input type="checkbox" class="radio" name="tier" value="2000">
+                                <b>Altar of the Unweighted Scales</b>: 2000g. No Conflicts.
+                            </label>
+                            <br>
+                            <label>
+                                <input type="checkbox" class="radio" name="tier" value="2000">
+                                <b>Altar of the Wandering Star</b>: 2000g. Conflicts with: <b>Earthsinger</b> and <b>Netherlord</b>.
+                            </label>
+                            <br>
+                            <label>
+                                <input type="checkbox" class="radio" name="tier" value="2000">
+                                <b>Altar of the Worldchaser</b>: 2000g. Conflicts with: <b>Earthsinger</b> and <b>Netherlord</b>.
+                            </label>
+                            <br>
+                        </form>
+                    </td>
+                </tr>
+            </table>
         </td>
     </tr>
-
 </table>
 
 </body>

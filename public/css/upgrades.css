@@ -2,17 +2,24 @@ body {
     color: #f2f3f9;
 }
 
+h2 {
+    margin-bottom: .5%;
+}
+
 .inline {
     display: inline;
 }
 
-table {
+table.major {
     position: absolute;
     left: 10%;
     width: 80%;
     /*border: 1px solid white;*/
+    margin-bottom: 2%;
+    z-index: -1;
 }
 
 td {
+    vertical-align: top;
     /*border: 1px solid white;*/
 }
