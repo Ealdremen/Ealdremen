@@ -14,12 +14,14 @@ table.major {
     position: absolute;
     left: 10%;
     width: 80%;
-    /*border: 1px solid white;*/
     margin-bottom: 1.4%;
     z-index: -1;
 }
 
 td {
     vertical-align: top;
-    /*border: 1px solid white;*/
+}
+
+#upgrades {
+    margin-right: 25%;
 }
