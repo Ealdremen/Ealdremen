@@ -1,0 +1,27 @@
+body {
+    color: #f2f3f9;
+}
+
+h2 {
+    margin-bottom: .5%;
+}
+
+.inline {
+    display: inline;
+}
+
+table.major {
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    margin-bottom: 1.4%;
+    z-index: -1;
+}
+
+td {
+    vertical-align: top;
+}
+
+#upgrades {
+    margin-right: 25%;
+}

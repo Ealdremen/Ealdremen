@@ -1,0 +1,46 @@
+body {
+    background-color: #000000;
+}
+
+.center {
+    text-align: center;
+}
+
+#header {
+    z-index: 1;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+.nav {
+    border: solid #ccc;
+    border-width: 1px 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-image: url("http://i.imgur.com/z6i3yB4.png");
+}
+
+.nav a {
+    display: inline-block;
+    padding: 10px;
+}
+
+.nav li {
+    display: inline;
+}
+
+p#footer {
+    color: #f2f3f9;
+
+    position: absolute;
+    left: 30%;
+    width: 40%;
+}
