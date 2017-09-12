@@ -1,0 +1,12 @@
+body {
+    color: #f2f3f9;
+}
+
+.left {
+    position: absolute;
+    left: 10%;
+}
+
+.inline {
+    display: inline;
+}
