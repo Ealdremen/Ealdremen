@@ -2,11 +2,17 @@ body {
     color: #f2f3f9;
 }
 
-.left {
-    position: absolute;
-    left: 10%;
-}
-
 .inline {
     display: inline;
+}
+
+table {
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    /*border: 1px solid white;*/
+}
+
+td {
+    /*border: 1px solid white;*/
 }
