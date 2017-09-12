@@ -49,6 +49,30 @@ function addListenersToUpgradeForm(upgradeForm) {
             checkbox.value = tiers[i].getAttribute('value');
         });
     }
+
+    const altars = upgradeForm.getElementsByClassName('altar-box');
+
+    for(let i = 0; i < altars.length; i++) {
+        altars[i].addEventListener('click', function () {
+            if (checkbox.checked) {
+                budgetSpent.innerHTML = parseInt(budgetSpent.innerHTML) - parseInt(checkbox.getAttribute('value'));
+
+                if (altars[i].checked) {
+                    checkbox.value = parseInt(checkbox.getAttribute('value')) + parseInt(altars[i].getAttribute('value'));
+                } else {
+                    checkbox.value = parseInt(checkbox.getAttribute('value')) - parseInt(altars[i].getAttribute('value'));
+                }
+
+                budgetSpent.innerHTML = parseInt(budgetSpent.innerHTML) + parseInt(checkbox.getAttribute('value'));
+            } else {
+                if (altars[i].checked) {
+                    checkbox.value = parseInt(checkbox.getAttribute('value')) + parseInt(altars[i].getAttribute('value'));
+                } else {
+                    checkbox.value = parseInt(checkbox.getAttribute('value')) - parseInt(altars[i].getAttribute('value'));
+                }
+            }
+        });
+    }
 }
 
 window.addEventListener('load', onLoadBudget);
