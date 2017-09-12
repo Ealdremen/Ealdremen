@@ -14,11 +14,10 @@ function onLoadBudget() {
 
     // Set listeners on all the update forms.
     const upgradeForms = document.querySelectorAll('.upgrade-form');
+    console.log(upgradeForms);
     upgradeForms.forEach((element) => {
         //const c = element.childNodes;
-        for(let i = 0; i < upgradeForms.length; i++) {
-            addListenersToUpgradeForm(element);
-        }
+        addListenersToUpgradeForm(element);
     });
 }
 
@@ -31,6 +30,7 @@ function onLoadBudget() {
 function addListenersToUpgradeForm(upgradeForm) {
     const checkbox = upgradeForm.getElementsByClassName('checkbox')[0];
     checkbox.addEventListener('click', function () {
+        console.log(checkbox.getAttribute('title'), checkbox.getAttribute('value'));
         if(checkbox.checked) {
             budgetSpent.innerHTML = parseInt(budgetSpent.innerHTML) + parseInt(checkbox.getAttribute('value'));
         } else {
