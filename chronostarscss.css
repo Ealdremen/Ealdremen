@@ -1,0 +1,206 @@
+body {
+    background: #ffffff url("chronobg.png") repeat;
+	height: 100%;
+}
+/*the sun*/
+.toppleking {
+    height: 345px;
+    width: 345px;
+    box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75);
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -185px;
+	margin-left: -185px;
+     -webkit-transition: background-color 2s; /* safari and chrome */
+     -moz-transition: background-color 2s; /* firefox */
+     -ms-transition: background-color 2s; /* internet explorer (shame on you) */
+     -o-transition: background-color 2s; /* opera. literally who the fuck uses opera */
+	color: #1e1e1e;
+	font-size: 35px;
+        font-family: cuprum;
+}
+
+/*the sun hover*/
+.toppleking:hover {
+    height: 345px;
+    width: 345px;
+    box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75);
+    border-radius: 50%;
+    background-color: #000000;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -185px;
+	margin-left: -185px;
+	color: #eee;
+	font-size: 35px;
+        font-family: cuprum;
+}
+/*first planet. planets start on the top left and move clockwise around toppleking.*/
+.planet1 {
+    height: 105px;
+    width: 105px;
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 190, .75);
+    border-radius: 50%;
+    background-color: #f8f8f8;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -255px;
+	margin-left: -300px;
+}
+/*second planet*/
+.planet2 {
+	height: 150px;
+    width: 150px;
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 190, .75);
+    border-radius: 50%;
+    background-color: #f8f8f8;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -310px;
+	margin-left: 120px;
+}
+
+/*third planet*/
+.planet3 {
+    height: 90px;
+    width: 90px;
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 190, .75);
+    border-radius: 50%;
+    background-color: #f8f8f8;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: 125px;
+	margin-left: 200px;
+}
+
+/*fourth planet*/
+.planet4 {
+    height: 110px;
+    width: 110px;
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 190, .75);
+    border-radius: 50%;
+    background-color: #f8f8f8;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: 155px;
+	margin-left: -285px;
+}
+/*toppleking font*/
+h1 {
+	font-size: 33px;
+	font-family: cuprum;
+}
+
+/*other planets font*/
+h2 {
+	color: #1e1e1e;
+	font-size: 15px;
+	font-family: cuprum;
+}
+
+/*used primarily for headers within the er. the thing. you know. the popup thing*/
+h3 {
+	color:#000;
+	font-size: 40px;
+	font-family: cuprum;
+	text-align:center;
+}
+
+/*in case you need a subheader*/
+h4 {
+	color:#000;
+	font-size: 20px;
+	font-family: cuprum;
+	text-align: left;
+	border-bottom: 1px solid #000;
+}
+
+/*all basic text should go in these tags*/
+p {
+	color:#000;
+	font-size: 12px;
+	font-family: sans-serif;
+	text-align:justify;
+}
+
+/*centered text. like, absolute center. like the names on the planets*/
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*author picture in the about page. image doesnt resize so you have to put the height and width of the image*/
+.aboutpic {
+	width: 250px;
+	height: 213px;
+    background-image: url("carolinepic.png");
+    float:left;
+	border: 1px solid #000;
+	border-radius: 10px;
+	margin-right: 8px;
+	
+}
+	
+.modalDialog {
+        position: fixed;
+        font-family: Arial, Helvetica, sans-serif;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0,0,0,0.8);
+        z-index: 99999;
+        opacity:0;
+        -webkit-transition: opacity 400ms ease-in;
+        -moz-transition: opacity 400ms ease-in;
+        transition: opacity 400ms ease-in;
+        pointer-events: none;
+    }
+
+    .modalDialog:target {
+        opacity:1;
+        pointer-events: auto;
+    }
+
+    .modalDialog > div {
+        width: 525px;
+	height: 525px;
+	    border-radius: 10%;
+        position: relative;
+        margin: 10% auto;
+        padding: 5px 20px 13px 20px;
+        border-radius: 10px;
+        background: #eee;
+	overflow: auto;
+    }
+
+   .close {
+        background: #606061;
+        color: #FFFFFF;
+        line-height: 25px;
+        position: absolute;
+        right: 3px;
+        text-align: center;
+        top: 2px;
+        width: 24px;
+        text-decoration: none;
+        font-weight: bold;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        border-radius: 12px;
+        -moz-box-shadow: 1px 1px 3px #000;
+        -webkit-box-shadow: 1px 1px 3px #000;
+        box-shadow: 1px 1px 3px #000;
+    }
+
+    .close:hover { background: #00d9ff; }
